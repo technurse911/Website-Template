@@ -1,0 +1,12 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex e59a070..60b1e15 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -6,7 +6,6 @@[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <title>Web Template</title>[m
+     <link rel="stylesheet" href="C:\Users\adesi\web Template\header.css">[m
+[31m-     <!-- <link rel="stylesheet" href="C:\Users\adesi\web Template\header.css"> -->[m
+      <link rel="stylesheet" href="C:\Users\adesi\web Template\main.css">[m
+      <script src="https://kit.fontawesome.com/95bee03ae6.js" crossorigin="anonymous"></script>[m
+ </head>[m
