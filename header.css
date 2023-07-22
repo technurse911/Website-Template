@@ -71,28 +71,41 @@
       margin: 200px auto;
     }
 
-    @media (max-width: 480px) {
-      header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+
+
+    @media (max-width: 600px) {
+      *{
+        margin: 0;
         padding: 0;
-      } 
+      }
 
-      .title{
+      .title .web{
         font-size: 22px;
+        text-align: center;
+      }
+      .title{
+        margin-bottom: 4px;
       }
 
-      .menu {
-        flex-direction: column;
+      nav{
+        flex: none;
+        text-align: center;
+        padding:0;
+        margin: 0;
+        border-radius: 3px;
       }
+
+      
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
       .nav-list {
-        display: block;
-        text-align: right;
-        margin: 8px auto;
-        padding: 0;
+        margin: 4% auto;
+        margin-bottom: 4px;
+        padding: 0 8px;
       } 
     
       .nav-link {
