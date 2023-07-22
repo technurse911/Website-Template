@@ -36,7 +36,9 @@ section a{
 
 .container{
     display:flex;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -101,4 +103,30 @@ table{
      .footer-socials{
         display: inline;
 
+     }
+
+     @media (max-width: 600px) {
+        
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        }    
+        
+        
+section{
+    padding: 10px 10px;
+    box-shadow:  1px 2px 5px #3dc0af,1px 3px 5px #04eccd;
+    box-sizing: 5px;
+    text-align: center;
+    }
+    
+/*    
+    .list{
+    justify-content: space-between;    
+    padding: 20px;
+    box-shadow:  1px 2px 5px #3dc0af,1px 3px 5px #04eccd;
+    box-sizing: 5px;
+    } */
      }
