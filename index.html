@@ -5,41 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Template</title>
-    <link rel="stylesheet" href="header.css">
+    <script src="https://kit.fontawesome.com/95bee03ae6.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="main.css">
-     <script src="https://kit.fontawesome.com/95bee03ae6.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="header.css">
+
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-       <h1 class="title">
+       <!-- <h1 class="title">
         <span class="web">Web Template</span>
-        
-       </h1>
+       </h1> -->
 
-       <nav>
-        <ul class="menu">
-            <li class="nav-list">
-                <a class="nav-links active" href="">Home</a>
-            </li>
-            <li class="nav-list"> 
-                <a class="nav-links" href="">Service</a>
-            </li>
-            <li class="nav-list">
-                <a class="nav-links" href="">Portfolio</a>
-            </li>
-            <li class="nav-list">
-                <a class="nav-links" href="">Team</a>
-            </li>
-            <li class="nav-list">
-                <a class="nav-links" href="">Mega Menu</a>
-            </li>
-            <li class="nav-list">
-                <a class="nav-links" href="">Contact</a>
-            </li>   
+       <div class="navbar">
+        <div class="logo"> <a href="#">Tech-N</a></div>
+        <ul class="links">
+            <li><a href="home">HOME</a></li>
+            <li><a href="home">PORTFOLIO</a></li>
+            <li><a href="home">SERVICES</a></li>
+            <li><a href="home">CONTACT</a></li>
+            <li><a href="home">MENU</a></li>
         </ul>
-       </nav>
+        <a href="#" class="action_btn">LOGO</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </div>
+
+        <div class="dropdown_menu">
+            <li><a href="home">HOME</a></li>
+            <li><a href="home">PORTFOLIO</a></li>
+            <li><a href="home">SERVICES</a></li>
+            <li><a href="home">MENU</a></li>
+            <li> <a href="#" class="action_btn">LOGO</a></li>
+        </div>     
     </header>
 
        <!-- Main -->
@@ -236,8 +236,22 @@
         </div> <br>
         <h3>Kay Adesida</h3>
        </div>
-    </footer>   
-        
+    </footer>     
 </body>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+         : "fa-solid fa-bars "
+    }
+</script>
 </html>
 
